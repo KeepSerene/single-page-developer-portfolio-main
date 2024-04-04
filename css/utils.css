@@ -1,0 +1,66 @@
+/* Mobile layout */
+.wrapper {
+  max-width: var(--wrapper-width);
+  width: calc(100% - 2rem);
+  margin-inline: auto;
+}
+
+/* Tablet layout: 640px */
+@media (width >= 40em) {
+  .wrapper {
+    width: calc(100% - 3.75rem);
+  }
+}
+/* Due to the 'max-width' property, we don't have to worry about the desktop layout */
+
+/* Extra large headers */
+.header-xl {
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+  letter-spacing: -0.0284090909em; /* -2.5px */
+  line-height: 1.1;
+}
+
+/* SR only content */
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  position: absolute;
+  left: -10000px;
+  top: auto;
+}
+
+/* Underlined links and buttons */
+.underlined {
+  color: var(--primary-txt-clr);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.625;
+  letter-spacing: 0.143125em; /* 2.29px */
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.underlined::after {
+  content: "";
+  width: 100%;
+  height: 0.125rem;
+  background-color: var(--accent-clr);
+
+  position: absolute;
+  bottom: -0.625rem;
+  left: 0;
+}
+
+/* Border bottom */
+.border-bottom {
+  border-bottom: 0.0625rem solid var(--secondary-txt-clr);
+}
+
+/* Contact and footer bg color */
+.secondary-bg-clr {
+  background-color: var(--secondary-bg-clr);
+}
