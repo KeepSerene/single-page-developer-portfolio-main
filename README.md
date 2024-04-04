@@ -11,5 +11,5 @@
 ### Note:
 
 - I will update the README file with all necessary information in the future.
-- One can find the live site [here]().
+- One can find the live site [here](https://portfolio-prism.netlify.app/).
 - Suggestions are most welcome.
